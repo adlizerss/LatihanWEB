@@ -1,0 +1,819 @@
+/* Reset CSS untuk menghilangkan padding dan margin default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #6b2b85;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Section utama */
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Reset CSS untuk menghilangkan padding dan margin default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #6b2b85;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Section utama */
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+/* Form kontak */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #6b2b85;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b2b85;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet dan layar yang lebih besar dari 600px */
+@media (min-width: 600px) {
+    section {
+        padding: 30px;
+        margin: 40px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+/* Desktop dan layar yang lebih besar dari 992px */
+@media (min-width: 992px) {
+    section {
+        padding: 40px;
+        margin: 60px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 20px;
+        padding: 14px;
+    }
+}
+
+/* Layar ekstra besar (lebih dari 1200px) */
+@media (min-width: 1200px) {
+    section {
+        max-width: 900px;
+        margin: 80px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 22px;
+    }
+
+    button[type="submit"] {
+        font-size: 22px;
+        padding: 16px;
+    }
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Media Queries */
+
+/* Untuk tablet (600px ke atas) */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+}
+
+/* Untuk desktop (992px ke atas) */
+@media (min-width: 992px) {
+    nav ul li a {
+        padding: 14px 24px;
+    }
+}
+
+/* Reset CSS untuk menghilangkan padding dan margin default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #6b2b85;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Section utama */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gambar responsif */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulir */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #6b2b85;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b2b85;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet dan layar lebih besar dari 600px */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    section {
+        padding: 30px;
+        margin: 40px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+/* Desktop dan layar lebih besar dari 992px */
+@media (min-width: 992px) {
+    section {
+        padding: 40px;
+        margin: 60px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 20px;
+        padding: 14px;
+    }
+}
+
+/* Layar ekstra besar (lebih dari 1200px) */
+@media (min-width: 1200px) {
+    section {
+        max-width: 900px;
+        margin: 80px auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 22px;
+    }
+
+    button[type="submit"] {
+        font-size: 22px;
+        padding: 16px;
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #6b2b85;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6b2b85;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #6b2b85;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.service-card {
+    display: inline-block;
+    width: calc(33% - 40px);
+    margin: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin: 10px 0;
+}
+
+/* Contact CTA Section */
+.contact-cta {
+    background-color: #6b2b85;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-cta h2 {
+    margin-bottom: 20px;
+}
+
+.contact-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-cta .cta-button {
+    background-color: #fff;
+    color: #6b2b85;
+}
+
+.contact-cta .cta-button:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet dan layar lebih besar dari 600px */
+@media (min-width: 600px) {
+    .service-card {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Desktop dan layar lebih besar dari 992px */
+@media (min-width: 992px) {
+    .service-card {
+        width: calc(33% - 40px);
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #6b2b85;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9120.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724630400&semt=ais_hybrid') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6b2b85;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #6b2b85;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.service-card {
+    display: inline-block;
+    width: calc(33% - 40px);
+    margin: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    margin: 10px 0;
+}
+
+/* Contact CTA Section */
+.contact-cta {
+    background-color: #6b2b85;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-cta h2 {
+    margin-bottom: 20px;
+}
+
+.contact-cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-cta .cta-button {
+    background-color: #fff;
+    color: #6b2b85;
+}
+
+.contact-cta .cta-button:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet dan layar lebih besar dari 600px */
+@media (min-width: 600px) {
+    .service-card {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Desktop dan layar lebih besar dari 992px */
+@media (min-width: 992px) {
+    .service-card {
+        width: calc(33% - 40px);
+    }
+}

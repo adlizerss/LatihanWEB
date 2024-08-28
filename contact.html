@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kontak Kami</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+    
+
+    <section>
+        <h2>Formulir Kontak</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Hak Cipta &copy; 2024 - Semua Hak Dilindungi</p>
+    </footer>
+
+    <!-- Tambahkan JavaScript di sini -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            // Ambil nilai input
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Regex untuk validasi email
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            // Validasi semua field diisi
+            if (name === "" || email === "" || message === "") {
+                alert("Semua field harus diisi!");
+                event.preventDefault(); // Mencegah pengiriman form
+                return;
+            }
+
+            // Validasi format email
+            if (!emailPattern.test(email)) {
+                alert("Harap masukkan alamat email yang benar.");
+                event.preventDefault(); // Mencegah pengiriman form
+                return;
+            }
+
+            // Jika semua validasi lolos, form akan disubmit
+        });
+    </script>
+
+</body>
+</html>
